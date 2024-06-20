@@ -1,0 +1,20 @@
+---
+title: "Desktop - Genvej til logud fra menu"
+category: "Desktop"
+source: os2borgerpc/desktop/desktop_launcher_logout_button_icon.sh
+---
+
+## Beskrivelse
+Opretter en logud-genvej i menuen med valgfrit ikon. Man kan også undlade at vælge et ikon selv, og så benyttes et standard-ikon. Ikonet skal være i et af følgende formater: 
+.svg, .png, .jpg/.jpeg
+
+Inputparametre:
+1. Skal genvejen tilføjes eller fjernes? 
+    Sæt hak for at tilføje.
+    Lad stå tom for at slette den, så fremt den findes.
+2. Navnet du ønsker, genvejen skal have. Denne kan ses hvis Borgeren holder musen hen over genvejen.
+3. Skal genvejen sættes i starten eller enden af menuen?
+    Sæt hak for at sætte den i starten.
+4. Her kan du uploade eget ikon at bruge til genvejen. Du kan også udelade at uploade et ikon, og der vil i så fald blive brugt et standard-ikon til genvejen.
+
+Dette script er blevet testet og virker på Ubuntu 22.04.
