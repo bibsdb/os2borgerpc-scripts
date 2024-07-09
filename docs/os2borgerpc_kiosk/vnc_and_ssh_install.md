@@ -2,6 +2,11 @@
 title: "OS2borgerPC Kiosk - Installer SSH og VNC"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/vnc_and_ssh_install.sh
+parameters:
+  - name: "VNC kodeord"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

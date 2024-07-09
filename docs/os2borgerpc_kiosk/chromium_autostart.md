@@ -2,6 +2,27 @@
 title: "OS2borgerPC Kiosk - Chromium Autostart"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/chromium_autostart.sh
+parameters:
+  - name: "Forsinkelse"
+    type: "integer"
+    default: 0
+    mandatory: true
+  - name: "URL"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Bredde"
+    type: "integer"
+    default: null
+    mandatory: true
+  - name: "Højde"
+    type: "integer"
+    default: null
+    mandatory: true
+  - name: "Orientation"
+    type: "string"
+    default: "normal"
+    mandatory: true  
 ---
 
 ## Beskrivelse

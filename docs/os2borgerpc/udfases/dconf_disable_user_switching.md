@@ -2,6 +2,7 @@
 title: "Udfases - Desktop - Fjern brugerskifte fra menuen"
 category: "Udfases"
 source: os2borgerpc/udfases/dconf_disable_user_switching.sh
+parameters:
 ---
 
 ## Beskrivelse

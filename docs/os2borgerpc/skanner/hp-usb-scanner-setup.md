@@ -2,6 +2,7 @@
 title: "Skanner - Opsæt HP USB Skanner"
 category: "Skanner"
 source: os2borgerpc/skanner/hp-usb-scanner-setup.sh
+parameters:
 ---
 
 ## Beskrivelse

@@ -2,6 +2,15 @@
 title: "OS2borgerPC - Heimdal: Installer klient"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/heimdal_install_client.sh
+parameters:
+  - name: "Installér heimdal"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Licensnøgle fra Heimdal"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

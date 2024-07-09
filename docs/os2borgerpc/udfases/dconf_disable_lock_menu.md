@@ -2,6 +2,7 @@
 title: "Udfases - Desktop: Fjern lås fra menuen"
 category: "Udfases"
 source: os2borgerpc/udfases/dconf_disable_lock_menu.sh
+parameters:
 ---
 
 ## Beskrivelse

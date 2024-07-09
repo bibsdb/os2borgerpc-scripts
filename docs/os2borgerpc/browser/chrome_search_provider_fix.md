@@ -2,6 +2,7 @@
 title: "Browser - Chrome: Fjern spørgsmål om søgemaskine"
 category: "Browser"
 source: ""
+parameters: []
 ---
 
 ## Beskrivelse

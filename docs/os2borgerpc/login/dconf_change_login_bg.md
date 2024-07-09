@@ -2,6 +2,15 @@
 title: "Login - Skift baggrundsbillede på loginskærm"
 category: "Login"
 source: os2borgerpc/login/dconf_change_login_bg.sh
+parameters:
+  - name: "Aktivér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Billede"
+    type: "file"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

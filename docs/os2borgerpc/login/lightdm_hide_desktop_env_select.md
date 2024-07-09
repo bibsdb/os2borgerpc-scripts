@@ -2,6 +2,11 @@
 title: "Login - Skjul knap til valg af skrivebordsmiljø"
 category: "Login"
 source: os2borgerpc/login/lightdm_hide_desktop_env_select.sh
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

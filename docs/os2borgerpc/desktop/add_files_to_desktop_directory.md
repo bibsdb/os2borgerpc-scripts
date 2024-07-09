@@ -2,6 +2,59 @@
 title: "Desktop - Tilføj filer i mappe på skrivebord (Skabeloner)"
 category: "Desktop"
 source: ""
+parameters:
+  - name: "Tilføj mappen?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Navn på mappen"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Kun læseadgang til originalfilerne (nulstilles uanset efter logud)"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Fil 1 (valgfri)"
+    type: "file"
+    default: null
+    mandatory: false
+  - name: "Fil 2 (valgfri)"
+    type: "file"
+    default: null
+    mandatory: false
+  - name: "Fil 3 (valgfri)"
+    type: "file"
+    default: null
+    mandatory: false
+  - name: "Fil 4 (valgfri)"
+    type: "file"
+    default: null
+    mandatory: false
+  - name: "Fil 5 (valgfri)"
+    type: "file"
+    default: null
+    mandatory: false
+  - name: "Fil 6 (valgfri)"
+    type: "file"
+    default: null
+    mandatory: false
+  - name: "Fil 7 (valgfri)"
+    type: "file"
+    default: null
+    mandatory: false
+  - name: "Fil 8 (valgfri)"
+    type: "file"
+    default: null
+    mandatory: false
+  - name: "Fil 9 (valgfri)"
+    type: "file"
+    default: null
+    mandatory: false
+  - name: "Fil 10 (valgfri)"
+    type: "file"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

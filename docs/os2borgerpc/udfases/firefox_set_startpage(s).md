@@ -2,6 +2,15 @@
 title: "Udfases - Firefox - Sæt startside(r)"
 category: "Udfases"
 source: os2borgerpc/udfases/firefox_set_startpage(s).sh
+parameters:
+  - name: "URL"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "EKSTRA_URLS"
+    type: "string"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

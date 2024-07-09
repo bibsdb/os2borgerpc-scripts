@@ -2,6 +2,15 @@
 title: "OS2borgerPC - Microsoft Teams: Installer"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/microsoft_teams_install.sh
+parameters:
+  - name: "Installér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Fil"
+    type: "file"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

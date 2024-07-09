@@ -2,6 +2,27 @@
 title: "Sikkerhed - Log Borger ud efter X minutters inaktivitet med besked"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/inactivity_logout_after_time.sh
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Antal MINUTTER til dialog bliver vist"
+    type: "integer"
+    default: null
+    mandatory: true
+  - name: "Antal MINUTTER til brugeren bliver logget ud"
+    type: "integer"
+    default: null
+    mandatory: true
+  - name: "Tekst som bliver vist i dialogboksen"
+    type: "string"
+    default: null
+    mandatory: false
+  - name: "Tekst som bliver vist på dialogboks knappen"
+    type: "string"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

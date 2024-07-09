@@ -2,6 +2,7 @@
 title: "Printer - Lexmark: Installer drivere"
 category: "Printer"
 source: os2borgerpc/printer/printer_lexmark_install_drivers.sh
+parameters:
 ---
 
 ## Beskrivelse

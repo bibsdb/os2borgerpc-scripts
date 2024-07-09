@@ -2,6 +2,15 @@
 title: "OS2borgerPC - Tilføj keyboardlayout (sprog)"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/dconf_keyboard_layout.sh
+parameters:
+  - name: "Tilføj?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Navn på tastaturlayout (eks. 'ua' for Ukrainsk)"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

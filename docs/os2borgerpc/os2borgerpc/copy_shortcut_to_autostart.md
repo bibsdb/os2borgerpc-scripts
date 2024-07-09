@@ -2,6 +2,11 @@
 title: "Desktop - Kopier genvej til autostart"
 category: "Desktop"
 source: os2borgerpc/os2borgerpc/copy_shortcut_to_autostart.sh
+parameters:
+  - name: "Navn på genvej (uden .desktop) der skal kopieres til autostart"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

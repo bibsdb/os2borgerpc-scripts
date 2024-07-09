@@ -2,6 +2,27 @@
 title: "Skanner - Opret delt Samba-mappe til skan"
 category: "Skanner"
 source: os2borgerpc/skanner/scans_samba_dir.sh
+parameters:
+  - name: "Installer Samba og opret delt mappe?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Navn på mappen på skrivebordet"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Ønsket kodeord til Samba-brugeren"
+    type: "password"
+    default: null
+    mandatory: true
+  - name: "Deaktiver NTLMv1 (så kun NTLMv2 og nyere tillades)"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Tillad forbindelse over NetBIOS"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

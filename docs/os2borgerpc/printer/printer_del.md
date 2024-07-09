@@ -2,6 +2,11 @@
 title: "Printer - Slet printer"
 category: "Printer"
 source: os2borgerpc/printer/printer_del.sh
+parameters:
+  - name: "Navn"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

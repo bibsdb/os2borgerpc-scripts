@@ -2,6 +2,11 @@
 title: "Desktop - Genvej til at kopiere skærmindstillinger fra superuser til Borger"
 category: "Desktop"
 source: ""
+parameters:
+  - name: "Opret genvej"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

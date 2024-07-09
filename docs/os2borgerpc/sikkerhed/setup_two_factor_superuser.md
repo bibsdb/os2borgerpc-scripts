@@ -2,6 +2,15 @@
 title: "Sikkerhed - Totrinsbekræftelse for superuser"
 category: "Sikkerhed"
 source: sikkerhed/setup_two_factor_superuser.sh
+parameters:
+  - name: "Aktivér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Sikkerhedsnøgle"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

@@ -2,6 +2,11 @@
 title: "OS2borgerPC Kiosk - Aktiver lyd"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/sound_enable.sh
+parameters:
+  - name: "Aktivér lyd?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

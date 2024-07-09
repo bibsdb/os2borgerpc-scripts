@@ -2,6 +2,7 @@
 title: "Sikkerhed: Genvej til at låse Borger-konto op fra superusers skrivebord"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/unexpire_user_superuser_shortcut.sh
+parameters:
 ---
 
 ## Beskrivelse

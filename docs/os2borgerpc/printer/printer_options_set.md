@@ -2,6 +2,27 @@
 title: "Printer - Sæt indstillinger"
 category: "Printer"
 source: os2borgerpc/printer/printer_options_set.sh
+parameters:
+  - name: "Printer-navn"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "PageSize (f.eks. A4 eller Letter)"
+    type: "string"
+    default: "A4"
+    mandatory: false
+  - name: "ColorModel (f.eks. RGB eller Gray)"
+    type: "string"
+    default: null
+    mandatory: false
+  - name: "Duplex (f.eks. DuplexTumble eller None)"
+    type: "string"
+    default: null
+    mandatory: false
+  - name: "Print-orientering"
+    type: "options"
+    default: ",Portrait,Landscape,Reverse landscape,Reverse portrait"
+    mandatory: false
 ---
 
 ## Beskrivelse

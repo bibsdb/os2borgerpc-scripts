@@ -2,6 +2,15 @@
 title: "Fejlfinding - Samba - Tjek forbindelse"
 category: "Fejlfinding"
 source: common/fejlfinding/debug_samba_test_connection.sh
+parameters:
+  - name: "IP-adresse på BorgerPC'en der kører Samba"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Kodeord til Samba"
+    type: "password"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

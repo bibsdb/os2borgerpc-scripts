@@ -2,6 +2,7 @@
 title: "22.04 opgradering - Kiosk Opgradering til Ubuntu 22.04 trin 3"
 category: "22.04 opgradering"
 source: common/22_04_opgradering/kiosk_lts_upgrade_in_place_step_3.sh
+parameters: []
 ---
 
 ## Beskrivelse

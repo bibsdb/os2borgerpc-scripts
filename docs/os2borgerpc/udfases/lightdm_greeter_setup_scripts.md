@@ -2,6 +2,11 @@
 title: "Udfases - Login - Slå scriptkørsel ved login til"
 category: "Udfases"
 source: os2borgerpc/udfases/lightdm_greeter_setup_scripts.sh
+parameters:
+  - name: "Slet alle tidligere gemte login scripts fra computeren"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

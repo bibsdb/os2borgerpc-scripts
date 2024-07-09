@@ -2,6 +2,15 @@
 title: "Printer - Honeywell PC43d billetprinter: Installer (Intermec)"
 category: "Printer"
 source: os2borgerpc/printer/printer_honeywell_pc43d_add.sh
+parameters:
+  - name: "Installér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "CUPS-driver (en .tar.gz-fil - downloades hos Honeywell - se beskrivelse)"
+    type: "file"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

@@ -2,6 +2,11 @@
 title: "OS2borgerPC - Cisco Jabber (JVDI) - Installer"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/cisco_jabber_install_jvdi.sh
+parameters:
+  - name: "fil"
+    type: "file"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

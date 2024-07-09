@@ -2,6 +2,11 @@
 title: "OS2borgerPC - Dupliker skærm fremfor udvid"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/duplicate_monitors_xdotool_test.sh
+parameters:
+  - name: "Skift til duplikeret skærm"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

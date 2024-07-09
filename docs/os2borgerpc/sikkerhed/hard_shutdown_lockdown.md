@@ -2,6 +2,11 @@
 title: "Sikkerhed - Bloker for login ved hård nedlukning"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/hard_shutdown_lockdown.sh
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

@@ -2,6 +2,27 @@
 title: "Sikkerhed - Log altid ud efter X minutter med nedtæller"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/always_logout_after_time_visual.sh
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Antal MINUTTER til logud"
+    type: "integer"
+    default: null
+    mandatory: true
+  - name: "Tekst der vises før tidspunktet i nedtællingen"
+    type: "string"
+    default: null
+    mandatory: false
+  - name: "Antal SEKUNDER tilbage af nedtællingen hvor bruger advares"
+    type: "integer"
+    default: null
+    mandatory: false
+  - name: "Tekst i advarselsinfoboks om kommende logud"
+    type: "string"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

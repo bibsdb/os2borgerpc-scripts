@@ -2,6 +2,7 @@
 title: "Browser - Chrome:  Gemte logins - 2. Hent logininformationer fra maskine"
 category: "Browser"
 source: os2borgerpc/browser/chrome_logins_fetch.sh
+parameters: []
 ---
 
 ## Beskrivelse

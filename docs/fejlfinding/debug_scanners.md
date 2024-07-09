@@ -2,6 +2,7 @@
 title: "Fejlfinding - Skannere"
 category: "Fejlfinding"
 source: common/fejlfinding/debug_scanners.sh
+parameters:
 ---
 
 ## Beskrivelse

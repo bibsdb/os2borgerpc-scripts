@@ -2,6 +2,23 @@
 title: "Desktop - Genvej til logud fra skrivebord"
 category: "Desktop"
 source: os2borgerpc/desktop/desktop_logout_button_icon.sh
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Navn på genvejen"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Bekræftelse på logud?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Ikon til genvejen (png/svg/jpg)"
+    type: "file"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

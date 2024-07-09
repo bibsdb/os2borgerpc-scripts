@@ -2,6 +2,7 @@
 title: "Fejlfinding - OS2borgerPC generel"
 category: "Fejlfinding"
 source: common/fejlfinding/os2borgerpc_general_debug.sh
+parameters:
 ---
 
 ## Beskrivelse

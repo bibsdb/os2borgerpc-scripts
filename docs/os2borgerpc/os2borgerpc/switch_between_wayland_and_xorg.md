@@ -2,6 +2,11 @@
 title: "OS2borgerPC - Skift ml. Wayland og Xorg"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/switch_between_wayland_and_xorg.sh
+parameters:
+  - name: "Gør Wayland til standard?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

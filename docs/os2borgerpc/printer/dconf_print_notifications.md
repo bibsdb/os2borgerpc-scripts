@@ -2,6 +2,11 @@
 title: "Printer - Slå print-notifikationer fra"
 category: "Printer"
 source: os2borgerpc/printer/dconf_print_notifications.sh
+parameters:
+  - name: "Aktivér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

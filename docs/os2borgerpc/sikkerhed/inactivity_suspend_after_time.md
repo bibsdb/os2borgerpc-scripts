@@ -2,6 +2,27 @@
 title: "Sikkerhed - Aktiver dvale efter X minutters inaktivitet med besked"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/inactivity_suspend_after_time.sh
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Antal MINUTTER til dialog vises"
+    type: "integer"
+    default: null
+    mandatory: true
+  - name: "Antal MINUTTER til dvale aktiveres"
+    type: "integer"
+    default: null
+    mandatory: true
+  - name: "Tekst som bliver vist i dialogboksen"
+    type: "string"
+    default: null
+    mandatory: false
+  - name: "Tekst som bliver vist på dialogboks knappen"
+    type: "string"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

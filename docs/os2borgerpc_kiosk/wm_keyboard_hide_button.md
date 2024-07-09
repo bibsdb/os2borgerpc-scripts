@@ -2,6 +2,23 @@
 title: "OS2borgerPC Kiosk - Chromium med onboard-tastatur skjul/vis"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/wm_keyboard_hide_button.sh
+parameters:
+  - name: "Tilføj knappen?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Hvilken browser/program?"
+    type: "string"
+    default: "chromium"
+    mandatory: true
+  - name: "Knap-ikon"
+    type: "file"
+    default: null
+    mandatory: true
+  - name: "Y-akse-justering"
+    type: "integer"
+    default: 0
+    mandatory: true
 ---
 
 ## Beskrivelse

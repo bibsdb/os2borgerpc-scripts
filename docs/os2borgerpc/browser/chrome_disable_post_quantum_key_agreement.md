@@ -2,6 +2,11 @@
 title: "Browser - Chrome: Løs problem med TLS 1.3 Hybridized Kyber Support"
 category: "Browser"
 source: ""
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

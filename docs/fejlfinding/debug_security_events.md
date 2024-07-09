@@ -2,6 +2,15 @@
 title: "Fejlfinding - Sikkerhedshændelser"
 category: "Fejlfinding"
 source: common/fejlfinding/debug_security_events.sh
+parameters:
+  - name: "Type (se beskrivelse)"
+    type: "string"
+    default: null
+    mandatory: false
+  - name: "Antal linier fra logfil"
+    type: "integer"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

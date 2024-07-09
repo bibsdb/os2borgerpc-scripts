@@ -2,6 +2,11 @@
 title: "Fejlfinding: Sikkerhedshændelser - Send logfiler"
 category: "Fejlfinding"
 source: common/fejlfinding/debug_security_events_full_logs.sh
+parameters:
+  - name: "Logfil (all / auth / sys / kern)"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

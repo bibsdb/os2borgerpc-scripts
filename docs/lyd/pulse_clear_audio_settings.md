@@ -2,6 +2,7 @@
 title: "Lyd - Ryd lydindstillinger"
 category: "Lyd"
 source: common/lyd/pulse_clear_audio_settings.sh
+parameters:
 ---
 
 ## Beskrivelse

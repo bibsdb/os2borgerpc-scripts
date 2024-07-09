@@ -2,6 +2,31 @@
 title: "Printer - Tilføj netværksprinter (PPD-fil skal angives)"
 category: "Printer"
 source: os2borgerpc/printer/network_printer_add_ppd.sh
+parameters:
+  - name: "Navn (OBS: INGEN ÆØÅ, mellemrum eller apostrofer)"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "IP-adresse"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Beskrivelse / Placering (INGEN ÆØÅ)"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "PPD-fil"
+    type: "file"
+    default: null
+    mandatory: true
+  - name: "Protokol"
+    type: "string"
+    default: "ipp"
+    mandatory: false
+  - name: "Sæt som standard?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

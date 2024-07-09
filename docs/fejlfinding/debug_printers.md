@@ -2,6 +2,7 @@
 title: "Fejlfinding - Printere"
 category: "Fejlfinding"
 source: common/fejlfinding/debug_printers.sh
+parameters:
 ---
 
 ## Beskrivelse

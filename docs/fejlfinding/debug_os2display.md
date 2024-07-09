@@ -2,6 +2,11 @@
 title: "Fejlfinding - OS2display"
 category: "Fejlfinding"
 source: common/fejlfinding/debug_os2display.sh
+parameters:
+  - name: "Domænet for din OS2display-server"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

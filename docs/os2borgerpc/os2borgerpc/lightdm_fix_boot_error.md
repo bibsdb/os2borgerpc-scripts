@@ -2,6 +2,11 @@
 title: "OS2borgerPC - Fix Light Display Manager Opstarts-fejl"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/lightdm_fix_boot_error.sh
+parameters:
+  - name: "Aktiver fix?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

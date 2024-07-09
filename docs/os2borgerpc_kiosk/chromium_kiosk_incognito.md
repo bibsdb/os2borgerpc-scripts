@@ -2,6 +2,15 @@
 title: "OS2borgerPC Kiosk - Chromium: Slå kiosk eller inkognito tilstand til/fra"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/chromium_kiosk_incognito.sh
+parameters:
+  - name: "Slå Kiosk til?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Slå inkognito til?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

@@ -2,6 +2,11 @@
 title: "Udfases - Login - Sæt Borger som standard ved login"
 category: "Udfases"
 source: os2borgerpc/udfases/set_user_as_default_lightdm_user.sh
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

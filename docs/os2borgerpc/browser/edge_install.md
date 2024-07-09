@@ -2,6 +2,11 @@
 title: "Browser - Edge: Installer"
 category: "Browser"
 source: os2borgerpc/browser/edge_install.sh
+parameters:
+  - name: "Installér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

@@ -2,6 +2,15 @@
 title: "OS2borgerPC Kiosk - Undgå Pauseskærm / Dvale via musemarkørbevægelse"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/suspend-move-mouse-continuously.sh
+parameters:
+  - name: "Aktivér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Interval (eks.: 10)"
+    type: "integer"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

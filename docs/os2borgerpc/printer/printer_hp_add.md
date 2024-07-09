@@ -2,6 +2,19 @@
 title: "Printer - HP: Tilføj (ældre) HP-printer"
 category: "Printer"
 source: os2borgerpc/printer/printer_hp_add.sh
+parameters:
+  - name: "0 = USB, 1 = Netværksprinter"
+    type: "integer"
+    default: null
+    mandatory: true
+  - name: "Ønsket navn for printeren"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "IP-adresse (hvis netværksprinter er valgt)"
+    type: "string"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

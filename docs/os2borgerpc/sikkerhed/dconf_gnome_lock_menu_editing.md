@@ -2,6 +2,11 @@
 title: "Sikkerhed - Lås menu"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/dconf_gnome_lock_menu_editing.sh
+parameters:
+  - name: "Aktivér"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

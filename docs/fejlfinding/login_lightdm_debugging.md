@@ -2,6 +2,7 @@
 title: "Fejlfinding - Opstart / Login"
 category: "Fejlfinding"
 source: common/fejlfinding/login_lightdm_debugging.sh
+parameters:
 ---
 
 ## Beskrivelse

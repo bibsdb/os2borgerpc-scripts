@@ -2,6 +2,7 @@
 title: "Lyd - Skriv informationer omkring lydenheder til job-loggen"
 category: "Lyd"
 source: common/lyd/pulse_info.sh
+parameters:
 ---
 
 ## Beskrivelse

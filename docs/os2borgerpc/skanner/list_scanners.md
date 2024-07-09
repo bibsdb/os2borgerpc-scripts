@@ -2,6 +2,7 @@
 title: "Skanner - Vis tilgængelige skannere"
 category: "Skanner"
 source: os2borgerpc/skanner/list_scanners.sh
+parameters:
 ---
 
 ## Beskrivelse

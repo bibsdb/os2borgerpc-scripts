@@ -2,6 +2,19 @@
 title: "OS2borgerPC Kiosk - Touchskærm: Fix problemer med koordinater/akser"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/touchscreen_fix_coordinates_issues.sh
+parameters:
+  - name: "Aktivér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Invertér X og Y-akser?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Orientering (normal/right/left)"
+    type: "string"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

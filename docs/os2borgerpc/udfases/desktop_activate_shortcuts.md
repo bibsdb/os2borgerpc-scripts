@@ -2,6 +2,7 @@
 title: "Udfases - Desktop - Aktiver genveje"
 category: "Udfases"
 source: os2borgerpc/udfases/desktop_activate_shortcuts.sh
+parameters:
 ---
 
 ## Beskrivelse

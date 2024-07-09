@@ -2,6 +2,11 @@
 title: "Desktop - Vis tilgængelighedsfunktioner"
 category: "Desktop"
 source: os2borgerpc/desktop/dconf_a11y.sh
+parameters:
+  - name: "Aktivér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

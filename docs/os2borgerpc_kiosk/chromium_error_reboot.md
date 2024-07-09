@@ -2,6 +2,11 @@
 title: "OS2borgerPC Kiosk - Genstart maskinen, hvis Chromium ikke starter korrekt"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/chromium_error_reboot.sh
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

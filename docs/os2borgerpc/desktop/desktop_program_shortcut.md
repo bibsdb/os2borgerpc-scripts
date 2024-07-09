@@ -2,6 +2,15 @@
 title: "Desktop - Genvej til program fra skrivebordet"
 category: "Desktop"
 source: os2borgerpc/desktop/desktop_program_shortcut.sh
+parameters:
+  - name: "Tilføj programmet?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Program"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

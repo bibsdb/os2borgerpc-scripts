@@ -2,6 +2,7 @@
 title: "Fejlfinding - OS2borgerPC Kiosk generel"
 category: "Fejlfinding"
 source: common/fejlfinding/kiosk_general_debug.sh
+parameters:
 ---
 
 ## Beskrivelse

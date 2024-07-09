@@ -2,6 +2,15 @@
 title: "Desktop - Juster Ubuntu Dock (programmenu)"
 category: "Desktop"
 source: os2borgerpc/desktop/dconf_ubuntu_dock_adjust.sh
+parameters:
+  - name: "Ønsket position for menuen (LEFT er standard)"
+    type: "options"
+    default: "LEFT,RIGHT,TOP,BOTTOM"
+    mandatory: false
+  - name: "Flyt applikationsåbner-knappen til starten af menuen? (udeladt hak er standard)"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

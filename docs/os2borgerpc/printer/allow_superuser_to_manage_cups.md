@@ -2,6 +2,7 @@
 title: "Printer - Tillad superuser at redigere indstillinger"
 category: "Printer"
 source: os2borgerpc/printer/allow_superuser_to_manage_cups.sh
+parameters:
 ---
 
 ## Beskrivelse

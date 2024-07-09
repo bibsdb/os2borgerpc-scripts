@@ -2,6 +2,7 @@
 title: "OS2borgerPC Kiosk - Chromium Ryd Cache NU"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/chromium_delete_profile.sh
+parameters:
 ---
 
 ## Beskrivelse

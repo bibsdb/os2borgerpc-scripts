@@ -2,6 +2,19 @@
 title: "Lyd - Sæt volumen på lydudgang"
 category: "Lyd"
 source: common/lyd/pulse_policy_sink_volume.sh
+parameters:
+  - name: "Aktivér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Lydenhed (sink)"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Lydniveau (i procent, uden procenttegn)"
+    type: "integer"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

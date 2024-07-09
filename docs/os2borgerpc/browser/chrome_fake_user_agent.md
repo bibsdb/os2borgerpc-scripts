@@ -2,6 +2,11 @@
 title: "Browser - Chrome: Ret problem med MitID"
 category: "Browser"
 source: os2borgerpc/browser/chrome_fake_user_agent.sh
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

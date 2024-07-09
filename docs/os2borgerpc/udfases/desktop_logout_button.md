@@ -2,6 +2,15 @@
 title: "Udfases - OS2borgerPC - Logud-knap"
 category: "Udfases"
 source: os2borgerpc/udfases/desktop_logout_button.sh
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Navn på genvej (uden mellemrum)"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

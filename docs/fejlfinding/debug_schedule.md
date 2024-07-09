@@ -2,6 +2,7 @@
 title: "Fejlfinding - Tidsplaner"
 category: "Fejlfinding"
 source: common/fejlfinding/debug_schedule.sh
+parameters:
 ---
 
 ## Beskrivelse

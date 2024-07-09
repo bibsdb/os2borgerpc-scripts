@@ -2,6 +2,19 @@
 title: "Desktop - Genvej til valgfri mappe fra skrivebordet"
 category: "Desktop"
 source: os2borgerpc/desktop/desktop_shortcut_to_directory.sh
+parameters:
+  - name: "Tilføj?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Sti til mappe"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Navn på genvej"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

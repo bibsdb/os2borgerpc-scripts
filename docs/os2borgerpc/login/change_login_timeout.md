@@ -2,6 +2,11 @@
 title: "Login - Ændr login-timeout"
 category: "Login"
 source: os2borgerpc/login/change_login_timeout.sh
+parameters:
+  - name: "Antal sekunder"
+    type: "integer"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

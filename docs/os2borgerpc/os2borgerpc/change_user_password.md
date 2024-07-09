@@ -2,6 +2,15 @@
 title: "OS2borgerPC - Skift kodeord for Borger"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/change_user_password.sh
+parameters:
+  - name: "Kodeord"
+    type: "password"
+    default: null
+    mandatory: true
+  - name: "Gentag kodeord"
+    type: "password"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

@@ -2,6 +2,7 @@
 title: "Udfases - Desktop - Fjern besked om opdatering / opgradering"
 category: "Udfases"
 source: os2borgerpc/udfases/remove_new_release_message.sh
+parameters:
 ---
 
 ## Beskrivelse

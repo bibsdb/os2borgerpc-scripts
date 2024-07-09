@@ -2,6 +2,23 @@
 title: "Desktop - Genvej til logud fra menu"
 category: "Desktop"
 source: os2borgerpc/desktop/desktop_launcher_logout_button_icon.sh
+parameters:
+  - name: "Tilføj logudknappen?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Genvejsnavn"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Indsæt i starten af menuen?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Ikon"
+    type: "file"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

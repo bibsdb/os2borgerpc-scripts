@@ -2,6 +2,19 @@
 title: "Printer - Brother-printer: Installer"
 category: "Printer"
 source: os2borgerpc/printer/printer_brother_add.sh
+parameters:
+  - name: "LPR-driver"
+    type: "file"
+    default: null
+    mandatory: true
+  - name: "CUPS-wrapper"
+    type: "file"
+    default: null
+    mandatory: true
+  - name: "Forbundet via Netværk (fremfor USB)"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

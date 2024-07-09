@@ -2,6 +2,11 @@
 title: "Sikkerhed - Bloker for login ved USB-event"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/lockdown_usb.sh
+parameters:
+  - name: "Aktiver?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

@@ -2,6 +2,11 @@
 title: "Fejlfinding - Netværk"
 category: "Fejlfinding"
 source: ""
+parameters:
+  - name: "Host (IP-adresse eller hostnavn)"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

@@ -2,6 +2,15 @@
 title: "Browser - Chrome/Chromium: Sæt startside(r)"
 category: "Browser"
 source: os2borgerpc/browser/chrome_chromium_policy_homepage.sh
+parameters:
+  - name: "Startside-URL"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Ekstra faneblade"
+    type: "string"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

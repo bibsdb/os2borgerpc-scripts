@@ -2,6 +2,11 @@
 title: "Sikkerhed - Juster adgang til terminalen"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/protect_terminal.sh
+parameters:
+  - name: "Giv adgang til terminalen"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

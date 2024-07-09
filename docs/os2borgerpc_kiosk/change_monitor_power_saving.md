@@ -2,6 +2,11 @@
 title: "OS2borgerPC Kiosk - Juster skærmdvale"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/change_monitor_power_saving.sh
+parameters:
+  - name: "Tillad skærmdvale?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

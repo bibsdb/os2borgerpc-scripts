@@ -2,6 +2,11 @@
 title: "Printer - Vis indstillinger"
 category: "Printer"
 source: os2borgerpc/printer/printer_options_get.sh
+parameters:
+  - name: "Printer-navn"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

@@ -2,6 +2,11 @@
 title: "Skanner - Installer Plustek LinuxAction"
 category: "Skanner"
 source: os2borgerpc/skanner/plustek_linuxaction_install.sh
+parameters:
+  - name: "Fil"
+    type: "file"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

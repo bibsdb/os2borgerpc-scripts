@@ -2,6 +2,23 @@
 title: "Desktop - Genvej til hjemmeside på skrivebord"
 category: "Desktop"
 source: os2borgerpc/desktop/desktop_url_shortcut.sh
+parameters:
+  - name: "Aktivér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "URL"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Navn på genvejen til websitet (ingen mellemrum!)"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Ikon (Valgfri. Hvis tom benyttes et standard-ikon.)"
+    type: "file"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

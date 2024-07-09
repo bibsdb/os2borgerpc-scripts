@@ -2,6 +2,11 @@
 title: "Browser - Sæt standard-browser"
 category: "Browser"
 source: os2borgerpc/browser/browser_set_default.sh
+parameters:
+  - name: "Ønsket standardbrowser (firefox, google-chrome, microsoft-edge)"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

@@ -2,6 +2,7 @@
 title: "Sikkerhed - Sæt Borger som aktiv efter blokeret login (lås op)"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/unexpire_user.sh
+parameters:
 ---
 
 ## Beskrivelse

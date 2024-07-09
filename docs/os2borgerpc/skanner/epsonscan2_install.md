@@ -2,6 +2,7 @@
 title: "Skanner - Installer Epson skanner-program"
 category: "Skanner"
 source: os2borgerpc/skanner/epsonscan2_install.sh
+parameters:
 ---
 
 ## Beskrivelse

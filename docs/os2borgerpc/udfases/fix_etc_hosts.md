@@ -2,6 +2,7 @@
 title: "Udfases - Fix /etc/hosts"
 category: "Udfases"
 source: os2borgerpc/udfases/fix_etc_hosts.sh
+parameters:
 ---
 
 ## Beskrivelse

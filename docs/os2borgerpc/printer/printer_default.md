@@ -2,6 +2,11 @@
 title: "Printer - Sæt standard"
 category: "Printer"
 source: os2borgerpc/printer/printer_default.sh
+parameters:
+  - name: "Navn"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

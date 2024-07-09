@@ -2,6 +2,15 @@
 title: "Sikkerhed - Fjern Luk Ned, Genstart og Hviletilstand fra menuen"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/polkit_policy_shutdown_suspend.sh
+parameters:
+  - name: "Fjern hviletilstand?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Fjern også luk ned og genstart?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

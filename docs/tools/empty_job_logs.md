@@ -2,6 +2,7 @@
 title: "Fejlfinding - Ryd joblogs"
 category: "Fejlfinding"
 source: tools/empty_job_logs.sh
+parameters:
 ---
 
 ## Beskrivelse

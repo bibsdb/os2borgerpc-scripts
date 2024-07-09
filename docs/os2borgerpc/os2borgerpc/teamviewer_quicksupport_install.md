@@ -2,6 +2,11 @@
 title: "OS2borgerPC - TeamViewer QuickSupport: Add/Remove"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/teamviewer_quicksupport_install.sh
+parameters:
+  - name: "Aktivér"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

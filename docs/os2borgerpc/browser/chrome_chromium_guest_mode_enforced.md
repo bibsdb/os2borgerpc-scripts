@@ -2,6 +2,11 @@
 title: "Browser - Chrome/Chromium: Gæstetilstand til/fra (guest mode)"
 category: "Browser"
 source: os2borgerpc/browser/chrome_chromium_guest_mode_enforced.sh
+parameters:
+  - name: "Aktiver"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

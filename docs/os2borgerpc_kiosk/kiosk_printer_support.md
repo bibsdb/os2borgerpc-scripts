@@ -2,6 +2,7 @@
 title: "OS2borgerPC Kiosk - Printerunderstøttelse"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/kiosk_printer_support.sh
+parameters:
 ---
 
 ## Beskrivelse

@@ -2,6 +2,15 @@
 title: "LibreOffice - Sæt indstillinger"
 category: "LibreOffice"
 source: os2borgerpc/libreoffice/overwrite_libreoffice_config.sh
+parameters:
+  - name: "Slå 'Tip of the Day' fra"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Brug Microsofts filformater"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

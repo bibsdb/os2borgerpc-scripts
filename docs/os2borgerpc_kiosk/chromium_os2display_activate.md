@@ -2,6 +2,15 @@
 title: "OS2borgerPC Kiosk - Aktiver OS2display-skærm (Chromium)"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/chromium_os2display_activate.sh
+parameters:
+  - name: "Screen URL"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Aktiveringskode"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

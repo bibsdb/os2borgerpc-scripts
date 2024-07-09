@@ -2,6 +2,15 @@
 title: "Skanner - Sæt standard-skanner"
 category: "Skanner"
 source: os2borgerpc/skanner/dconf_default_scanner.sh
+parameters:
+  - name: "Aktivér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Navn/Adresse på skanner"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

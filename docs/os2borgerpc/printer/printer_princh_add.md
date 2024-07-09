@@ -2,6 +2,19 @@
 title: "Printer - Tilføj Princh Cloud Printer"
 category: "Printer"
 source: os2borgerpc/printer/printer_options_set.sh
+parameters:
+  - name: "Navn (OBS: INGEN ÆØÅ, mellemrum eller apostrofer)"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "ID"
+    type: "integer"
+    default: null
+    mandatory: true
+  - name: "Beskrivelse / Placering (INGEN ÆØÅ)"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

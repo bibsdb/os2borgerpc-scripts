@@ -2,6 +2,15 @@
 title: "OS2borgerPC - Citrix Workspace App: Installer"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/citrix_workspace_app_install.sh
+parameters:
+  - name: "DEB"
+    type: "file"
+    default: null
+    mandatory: true
+  - name: "CRT"
+    type: "file"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

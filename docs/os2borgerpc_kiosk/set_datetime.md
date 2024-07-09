@@ -2,6 +2,7 @@
 title: "OS2borgerPC Kiosk - Sæt dansk tidszone og sprog"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/set_datetime.sh
+parameters:
 ---
 
 ## Beskrivelse

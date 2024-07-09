@@ -2,6 +2,11 @@
 title: "OS2borgerPC Kiosk - Chromium - Skift startside"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/chromium_change_homepage.sh
+parameters:
+  - name: "URL"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

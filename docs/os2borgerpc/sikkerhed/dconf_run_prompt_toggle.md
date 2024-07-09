@@ -2,6 +2,11 @@
 title: "Sikkerhed - Juster adgang til kør prompt (ALT-F2)"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/dconf_run_prompt_toggle.sh
+parameters:
+  - name: "Slå kør prompt fra"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

@@ -2,6 +2,15 @@
 title: "Login - Skjul superuser fra loginskærm og vis eventuelt loginfelt til valgfri bruger"
 category: "Login"
 source: os2borgerpc/login/lightdm_hide_superuser.sh
+parameters:
+  - name: "Skjul superuser-brugeren"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Vis loginfelt til valgfri bruger"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

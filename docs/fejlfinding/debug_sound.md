@@ -2,6 +2,7 @@
 title: "Fejlfinding - Lyd"
 category: "Fejlfinding"
 source: common/fejlfinding/debug_sound.sh
+parameters:
 ---
 
 ## Beskrivelse

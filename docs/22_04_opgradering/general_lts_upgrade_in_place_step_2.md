@@ -2,6 +2,7 @@
 title: "22.04 opgradering - Opgradering til Ubuntu 22.04 trin 2"
 category: "22.04 opgradering"
 source: common/22_04_opgradering/general_lts_upgrade_in_place_step_2.sh
+parameters: []
 ---
 
 ## Beskrivelse

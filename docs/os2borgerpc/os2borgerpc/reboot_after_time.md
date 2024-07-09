@@ -2,6 +2,11 @@
 title: "OS2borgerPC - Genstart computer efter X minutter"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/reboot_after_time.sh
+parameters:
+  - name: "minutter"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

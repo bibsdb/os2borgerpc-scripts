@@ -2,6 +2,15 @@
 title: "Login - Automatisk borgerlogin til/fra"
 category: "Login"
 source: os2borgerpc/login/user_automatic_login.sh
+parameters:
+  - name: "Aktiver automatisk borgerlogin"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Hvis ikke-automatisk login: Borger skal indtaste kodeord"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

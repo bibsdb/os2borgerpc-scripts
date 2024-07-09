@@ -2,6 +2,7 @@
 title: "OS2borgerPC Kiosk - Chromium Installér"
 category: "OS2BorgerPC Kiosk"
 source: os2borgerpc/os2borgerpc_kiosk/chromium_install.sh
+parameters:
 ---
 
 ## Beskrivelse

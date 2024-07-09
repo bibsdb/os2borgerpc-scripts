@@ -2,6 +2,23 @@
 title: "Browser - Chrome/Chromium: Sæt bogmærker i bar"
 category: "Browser"
 source: os2borgerpc/browser/chrome_chromium_policy_bookmarks.sh
+parameters:
+  - name: "Aktivér?"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Navn på overmappen til bogmærkerne"
+    type: "string"
+    default: null
+    mandatory: false
+  - name: "Tillad Borger at tilføje/redigere bogmærker"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "Bogmærker (i JSON-format)"
+    type: "file"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

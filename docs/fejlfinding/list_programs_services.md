@@ -2,6 +2,7 @@
 title: "Fejlfinding - List installerede programmer og services"
 category: "Fejlfinding"
 source: common/fejlfinding/list_programs_services.sh
+parameters:
 ---
 
 ## Beskrivelse

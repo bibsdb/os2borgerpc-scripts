@@ -2,6 +2,11 @@
 title: "OS2borgerPC - Sæt musehastighed"
 category: "OS2BorgerPC"
 source: os2borgerpc/os2borgerpc/dconf_mouse_set_speed.sh
+parameters:
+  - name: "Musehastighed"
+    type: "string"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

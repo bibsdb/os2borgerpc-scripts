@@ -2,6 +2,23 @@
 title: "OS2borgerPC Kiosk - Chromium: Tilføj data til Local Storage"
 category: "OS2BorgerPC Kiosk"
 source: 
+parameters:
+  - name: "URL"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Nøgle"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Værdi"
+    type: "string"
+    default: null
+    mandatory: true
+  - name: "Luk browseren først?"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse

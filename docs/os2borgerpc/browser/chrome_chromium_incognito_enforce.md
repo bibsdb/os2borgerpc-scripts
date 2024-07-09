@@ -2,6 +2,15 @@
 title: "Browser - Chrome/Chromium: Sæt Inkognito-indstillinger"
 category: "Browser"
 source: os2borgerpc/browser/chrome_chromium_incognito_enforce.sh
+parameters:
+  - name: "AKTIVER"
+    type: "checkbox"
+    default: null
+    mandatory: false
+  - name: "INCOGNITO_MODE"
+    type: "integer"
+    default: null
+    mandatory: true
 ---
 
 ## Beskrivelse

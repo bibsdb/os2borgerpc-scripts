@@ -2,6 +2,11 @@
 title: "Sikkerhed - Forhindr kørsel af eksekverbare tekst-filer fra GNOME Files (Nautilus)"
 category: "Sikkerhed"
 source: os2borgerpc/sikkerhed/dconf_files_deny_shell_script_running.sh
+parameters:
+  - name: "Forhindr kørsel af eksekverbare tekst-filer"
+    type: "checkbox"
+    default: null
+    mandatory: false
 ---
 
 ## Beskrivelse
