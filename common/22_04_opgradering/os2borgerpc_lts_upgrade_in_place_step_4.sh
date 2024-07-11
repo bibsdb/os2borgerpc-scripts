@@ -96,6 +96,33 @@ if [ -f "/usr/bin/gnome-control-center.real" ] && ! grep --quiet "zenity" /usr/b
   rm /usr/bin/gnome-control-center.real
 fi
 
+# Remove user access to terminal
+PROGRAM_PATH="/usr/bin/gnome-terminal"
+
+SKEL=".skjult"
+SHORTCUT_NAME="org.gnome.Terminal.desktop"
+SHORTCUT_GLOBAL_PATH="/usr/share/applications/$SHORTCUT_NAME"
+SHORTCUT_LOCAL_PATH="/home/$SKEL/.local/share/applications/$SHORTCUT_NAME"
+
+# Also remove the gnome extension that can start gnome terminal, don't stop execution if it fails
+apt-get remove --assume-yes nautilus-extension-gnome-terminal || true
+
+if grep --quiet 'zenity' "$PROGRAM_PATH"; then
+  PROGRAM_HISTORICAL_PATH="$PROGRAM_PATH.real"
+  dpkg-statoverride --remove "$PROGRAM_PATH" || true
+  rm "$PROGRAM_PATH"
+  dpkg-divert --remove --no-rename "$PROGRAM_PATH"
+  mv "$PROGRAM_HISTORICAL_PATH" "$PROGRAM_PATH"
+fi
+
+# Deny access
+if ! dpkg-statoverride --list | grep --quiet "$PROGRAM_PATH"; then # Don't statoverride if it's already been done (idempotency)
+  dpkg-statoverride --update --add superuser root 770 "$PROGRAM_PATH"
+fi
+mkdir --parents "$(dirname $SHORTCUT_LOCAL_PATH)"
+cp $SHORTCUT_GLOBAL_PATH $SHORTCUT_LOCAL_PATH
+chmod o-r $SHORTCUT_LOCAL_PATH
+
 # Remove user access to settings
 if [ ! -f "/usr/bin/gnome-control-center.real" ]; then
     dpkg-divert --rename --divert  /usr/bin/gnome-control-center.real --add /usr/bin/gnome-control-center
@@ -671,9 +698,68 @@ Dpkg::Options {
 Dpkg::Lock {Timeout "300";};
 EOF
 
+# Prevent user crontab persistence
+TMP_USERCRON="/etc/os2borgerpc/tmp_usercronfile"
+USERCRON="/etc/os2borgerpc/usercron"
+USER_CLEANUP="/usr/share/os2borgerpc/bin/user-cleanup.bash"
+ON_OFF_SCHEDULE_SCRIPT="/usr/local/lib/os2borgerpc/set_on-off_schedule.py"
+
+# Remove all lines not containing notify-send or zenity, which all of ours do
+sed -i "/notify-send\|zenity/! d" $TMP_USERCRON
+
+# Copy the temporary user crontab file to usercron
+if [ ! -f "$USERCRON" ]; then
+  cp $TMP_USERCRON $USERCRON
+fi
+
+chmod 700 $USERCRON
+
+if ! grep --quiet "crontab" $USER_CLEANUP; then
+  cat << EOF >> $USER_CLEANUP
+
+# Restore user crontab
+crontab -u user $USERCRON
+EOF
+fi
+
+if ! grep --quiet "atq" $USER_CLEANUP; then
+  cat << EOF >> $USER_CLEANUP
+
+# Remove possible scheduled at commands
+if [ -f /usr/bin/at ]; then
+  atq | cut --fields 1 | xargs --no-run-if-empty atrm
+fi
+EOF
+fi
+
+if ! grep --quiet "pkill" $USER_CLEANUP; then
+  cat << EOF >> $USER_CLEANUP
+
+# Kill all processes started by user
+pkill -KILL -u user
+EOF
+fi
+
+if ! grep --quiet "FILES_DIRS" $USER_CLEANUP; then
+  cat << EOF >> $USER_CLEANUP
+
+# Find all files/directories owned by user in the world-writable directories
+FILES_DIRS=\$(find /var/tmp/ /var/crash/ /var/metrics/ /var/lock/ -user user)
+rm --recursive --force /dev/shm/* /dev/shm/.??* \$FILES_DIRS
+EOF
+fi
+
+# If they're using on/off schedules, change the schedule to use the usercron-file
+if [ -f "$ON_OFF_SCHEDULE_SCRIPT" ] && grep --quiet "/tmp/usercron" $ON_OFF_SCHEDULE_SCRIPT; then
+  sed -i "s@USERCRON = \"/tmp@USERCRON = \"/etc/os2borgerpc@" $ON_OFF_SCHEDULE_SCRIPT
+  sed -i "0,/with open(USERCRON, 'w') as cronfile/{//d}" $ON_OFF_SCHEDULE_SCRIPT
+  sed -i "/subprocess\.run(\[\"crontab\", \"-u\", \"user\", \"-l\"/d" $ON_OFF_SCHEDULE_SCRIPT
+  sed -i "/os\.path\.exists(USERCRON)/d" $ON_OFF_SCHEDULE_SCRIPT
+  sed -i "/os\.remove(USERCRON)/d" $ON_OFF_SCHEDULE_SCRIPT
+fi
+
 # Restore crontab and reenable potential wake plans
 TMP_ROOTCRON=/etc/os2borgerpc/tmp_rootcronfile
-TMP_USERCRON=/etc/os2borgerpc/tmp_usercronfile
 if [ -f "$TMP_ROOTCRON" ]; then
   crontab $TMP_ROOTCRON
   crontab -u user $TMP_USERCRON
