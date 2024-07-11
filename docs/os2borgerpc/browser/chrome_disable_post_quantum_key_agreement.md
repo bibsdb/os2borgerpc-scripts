@@ -1,7 +1,7 @@
 ---
 title: "Browser - Chrome: Løs problem med TLS 1.3 Hybridized Kyber Support"
 category: "Browser"
-source: ""
+source: os2borgerpc/browser/chrome_disable_post_quantum_key_agreement.sh
 parameters:
   - name: "Aktiver?"
     type: "checkbox"
@@ -25,28 +25,3 @@ Det bør dog bemærkes, at det underliggende problem er firewall-relateret og id
 Se eksempelvis:
 https://www.reddit.com/r/sysadmin/comments/1carvpd/chrome_124_breaks_tls_handshake/
 https://www.reddit.com/r/sonicwall/comments/1cac4ii/content_filter_blocking_cfs_legitimate_traffic/
-
-## Kode
-#!/usr/bin/env bash
-
-set -x
-
-if get_os2borgerpc_config os2_product | grep --quiet kiosk; then
-  echo "Dette script er ikke designet til at blive anvendt på en kiosk-maskine."
-  exit 1
-fi
-
-ACTIVATE="$1"
-
-POLICY_FILE="/etc/opt/chrome/policies/managed/os2borgerpc-post-quantum-key-agreement.json"
-mkdir --parents "$(dirname "$POLICY_FILE")"
-
-if [ "$ACTIVATE" = "True" ]; then
-  cat << EOF > $POLICY_FILE
-{
-    "PostQuantumKeyAgreementEnabled": false
-}
-EOF
-else
-  rm --force $POLICY_FILE
-fi
